@@ -1,0 +1,314 @@
+	<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Mucca Mk.2 “SkyBovine” - Bio-Veicolo Volante di Nuova Generazione</title>
+<style>
+  /* Reset base */
+  * {
+    margin: 0; padding: 0; box-sizing: border-box;
+  }
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f7f9;
+    color: #222;
+    line-height: 1.6;
+  }
+  header {
+    background: #004643;
+    color: #e1e1e1;
+    padding: 20px 40px;
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 3px 7px rgba(0,0,0,0.2);
+  }
+  header h1 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+  }
+  nav ul li {
+    cursor: pointer;
+  }
+  nav ul li a {
+    color: #e1e1e1;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+  nav ul li a:hover {
+    color: #7bdfa7;
+  }
+  main {
+    max-width: 1200px;
+    margin: 100px auto 60px;
+    padding: 0 20px;
+  }
+  section {
+    margin-bottom: 80px;
+    background: #fff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.07);
+  }
+  section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    border-bottom: 3px solid #004643;
+    padding-bottom: 8px;
+    color: #004643;
+  }
+  section h3 {
+    font-size: 1.4rem;
+    margin-top: 25px;
+    margin-bottom: 12px;
+    color: #006655;
+  }
+  p {
+    font-size: 1rem;
+    margin-bottom: 12px;
+  }
+  ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+  ul li {
+    margin-bottom: 8px;
+  }
+  footer {
+    background: #004643;
+    color: #e1e1e1;
+    padding: 30px 40px;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 40px;
+  }
+  .btn {
+    display: inline-block;
+    background: #007a3d;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 15px;
+    transition: background 0.3s ease;
+  }
+  .btn:hover {
+    background: #00592b;
+  }
+  .social-links {
+    margin-top: 10px;
+  }
+  .social-links a {
+    margin: 0 10px;
+    color: #7bdfa7;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.1rem;
+  }
+  .social-links a:hover {
+    color: #00c864;
+  }
+  /* Responsive */
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      gap: 15px;
+    }
+    nav ul {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+</style>
+<script>
+  // Smooth scroll for nav links
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('nav a').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetID = this.getAttribute('href').substring(1);
+        const targetSection = document.getElementById(targetID);
+        if(targetSection){
+          window.scrollTo({
+            top: targetSection.offsetTop - 90,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+  });
+</script>
+</head>
+<body>
+
+<header>
+  <h1>SkyBovine - Mucca Mk.2</h1>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#prodotto">Prodotto</a></li>
+      <li><a href="#merch">Merch</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#assistenza">Assistenza</a></li>
+      <li><a href="#community">Community</a></li>
+      <li><a href="#acquista">Acquista</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="#azienda">Azienda</a></li>
+      <li><a href="#contatti">Contatti</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <!-- HOME -->
+  <section id="home" aria-label="Home - Introduzione SkyBovine">
+    <h2>Benvenuti a SkyBovine - La Rivoluzione del Bio-Veicolo Volante</h2>
+    <p>
+      Nel cuore dell’innovazione agro-tecnologica nasce la <strong>Mucca Mk.2 “SkyBovine”</strong>, un bio-veicolo volante di nuova generazione che unisce la tradizione biologica della mucca con l’avanguardia ingegneristica aerospaziale.  
+      Progettato per offrire mobilità senza precedenti, SkyBovine trasforma il concetto stesso di trasporto agricolo e personale, aprendo la strada a un futuro sostenibile e tecnologico.
+    </p>
+    <p>
+      Grazie a sistemi di propulsione ionica multi-canale, esoscheletri biomeccanici in titanio-carbonio e un’interfaccia neurale innovativa, la SkyBovine garantisce un’esperienza di volo immersiva e performante, sia sul terreno che nell’aria.
+    </p>
+    <p>
+      Scopri tutte le caratteristiche, il merch ufficiale, il supporto e come entrare a far parte della nostra community dedicata alla mobilità bio-meccanica del futuro!
+    </p>
+  </section>
+
+  <!-- PRODOTTO -->
+  <section id="prodotto" aria-label="Dettagli e Manuale SkyBovine">
+    <h2>Il Prodotto - Mucca Mk.2 “SkyBovine”</h2>
+    <h3>Introduzione Tecnologica</h3>
+    <p>
+      SkyBovine è il culmine dell’ingegneria bio-meccanica applicata all’agricoltura e al trasporto personale. Equipaggiata con un sistema di propulsione a getto ionico posizionato sulle zampe e nella regione posteriore, offre una potenza di spinta e manovrabilità senza eguali.  
+      La cabina di pilotaggio, accessibile tramite un sofisticato meccanismo idraulico di apertura delle mammelle, ospita un’interfaccia neurale che consente di controllare il veicolo con impulsi cerebrali, offrendo un’esperienza unica e immersiva.
+    </p>
+    <h3>Manuale di Istruzioni Completo</h3>
+    <h4>1. Accesso e Preparazione al Volo</h4>
+    <p>
+      Attiva il meccanismo di apertura mammario tramite pannello esterno o comando vocale. Posizionati all’interno della cabina ergonomica e collega il casco neurale NNI per la sincronizzazione. Il sistema di propulsione si avvierà progressivamente.
+    </p>
+    <h4>2. Accensione Propulsori e Decollo</h4>
+    <p>
+      Utilizza impulsi neurali per accendere i motori ionici sulle quattro zampe e nel propulsore posteriore. Le fiamme ioniche generano una potente spinta verticale, garantendo equilibrio grazie ai sistemi giroscopici integrati.
+    </p>
+    <h4>3. Controllo del Volo e Navigazione</h4>
+    <p>
+      Controlla velocità e direzione tramite interfaccia neurale: le zampe si muovono come timoni, mentre il propulsore posteriore modula l’accelerazione. Il display olografico interno fornisce dati telemetrici in tempo reale.
+    </p>
+    <h4>4. Atterraggio e Spegnimento Propulsori</h4>
+    <p>
+      Riduci la potenza dei motori per un atterraggio controllato. I sistemi ammortizzanti biomeccanici assorbono l’impatto. Spegni i propulsori con comando neurale o manuale e chiudi la cabina automaticamente.
+    </p>
+    <h4>5. Manutenzione e Sicurezza</h4>
+    <p>
+      Controlla regolarmente integrità motori, sistemi idraulici e interfaccia neurale. Pulisci con detergenti non corrosivi e verifica gli esoscheletri biomeccanici. In caso di emergenza, attiva il protocollo di atterraggio automatico.
+    </p>
+  </section>
+
+  <!-- MERCH -->
+  <section id="merch" aria-label="Merchandising Ufficiale SkyBovine">
+    <h2>Merch Ufficiale SkyBovine</h2>
+    <p>
+      Esplora la nostra linea esclusiva di merchandising ispirato al mondo SkyBovine. Dall’abbigliamento tecnico agli accessori lifestyle, ogni prodotto è realizzato con materiali innovativi, riflettendo la filosofia di tecnologia e sostenibilità della nostra bio-mucca volante.
+    </p>
+    <h3>Abbigliamento Tecnico</h3>
+    <ul>
+      <li><strong>Giacca “Jetstream” SkyBovine:</strong> Realizzata in tessuto anti-vento con inserti riflettenti, ideale per piloti e appassionati di volo bio-meccanico. Prezzo: €149,90</li>
+      <li><strong>T-shirt “Neural Sync”:</strong> Maglietta in cotone organico con stampa termo-reattiva del circuito neurale SkyBovine. Prezzo: €29,90</li>
+      <li><strong>Pantaloni “Titanium Flex”:</strong> Pantaloni tecnici con supporto in fibra di titanio-carbonio, per massima flessibilità e resistenza. Prezzo: €99,90</li>
+    </ul>
+    <h3>Accessori Lifestyle</h3>
+    <ul>
+      <li><strong>Casco Replica NNI:</strong> Replica fedele del casco neurale SkyBovine, con luci LED e suoni immersivi. Prezzo: €199,90</li>
+      <li><strong>Zaino “Biomech”:</strong> Zaino ergonomico con scomparti per attrezzatura da volo e gadget tecnologici. Prezzo: €79,90</li>
+      <li><strong>Portachiavi Jet Ionico:</strong> Miniatura del motore ionico SkyBovine, ideale come gadget da collezione. Prezzo: €14,90</li>
+    </ul>
+    <h3>Come Ordinare</h3>
+    <p>
+      Tutti i prodotti sono disponibili nello store online. Offriamo spedizioni in tutta Italia e Europa con tracciamento e garanzia di qualità. Registrati al sito per accedere a sconti esclusivi e offerte riservate ai membri della community SkyBovine.
+    </p>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" aria-label="Domande Frequenti">
+    <h2>FAQ - Domande Frequenti su SkyBovine</h2>
+    <h3>Come funziona il controllo neurale?</h3>
+    <p>
+      Il casco neurale NNI traduce gli impulsi cerebrali in comandi motori per il bio-veicolo, permettendo una guida naturale e reattiva. La sincronizzazione avviene in pochi secondi dopo l’attivazione.
+    </p>
+    <h3>Quali sono i requisiti per pilotare SkyBovine?</h3>
+    <p>
+      È necessario un addestramento base per familiarizzare con l’interfaccia neurale e i protocolli di sicurezza. Offriamo corsi ufficiali presso i nostri centri autorizzati.
+    </p>
+    <h3>Quanto dura la batteria dei motori ionici?</h3>
+    <p>
+      La batteria ha un’autonomia di circa 4 ore di volo continuo, con ricarica rapida in 45 minuti tramite stazioni dedicate.
+    </p>
+    <h3>Il veicolo è sicuro in caso di guasti?</h3>
+    <p>
+      SkyBovine è dotato di sistemi di emergenza automatici che consentono un atterraggio di sicurezza in caso di anomalie.
+    </p>
+    <h3>Posso personalizzare il veicolo?</h3>
+    <p>
+      Sono disponibili opzioni di personalizzazione estetica e funzionale tramite il nostro configuratore online.
+    </p>
+  </section>
+
+  <!-- ASSISTENZA -->
+  <section id="assistenza" aria-label="Supporto e Assistenza SkyBovine">
+    <h2>Assistenza Tecnica e Supporto</h2>
+    <p>
+      Il nostro team di supporto è a tua disposizione per ogni necessità tecnica, manutenzione e aggiornamento software.  
+      Contattaci tramite i seguenti recapiti o apri un ticket sul portale dedicato.
+    </p>
+    <h3>Recapiti Telefonici</h3>
+    <ul>
+      <li>Linea Assistenza Italia: <strong>+39 06 1234 5678</strong> (lun-ven 9:00-18:00)</li>
+      <li>Supporto Internazionale: <strong>+44 20 7946 0958</strong></li>
+      <li>Emergenze Tecniche 24/7: <strong>+39 331 987 6543</strong></li>
+    </ul>
+    <h3>Supporto Online</h3>
+    <p>
+      Visita il nostro <a href="https://support.skybovine.it" target="_blank" rel="noopener">portale di assistenza</a> per aprire ticket, scaricare manuali e aggiornamenti firmware.
+    </p>
+  </section>
+
+  <!-- COMMUNITY -->
+  <section id="community" aria-label="Community e Social SkyBovine">
+    <h2>Community SkyBovine</h2>
+    <p>
+      Entra nella community globale di appassionati e piloti SkyBovine. Partecipa ai forum, condividi esperienze di volo, partecipa agli eventi ufficiali e segui le ultime novità.
+    </p>
+    <h3>Forum Ufficiale</h3>
+    <p>
+      Registrati al <a href="https://forum.skybovine.it" target="_blank" rel="noopener">forum ufficiale</a> per discussioni tecniche, scambio di consigli e networking tra utenti.
+    </p>
+    <h3>Eventi e Raduni</h3>
+    <p>
+      Organizzazione di raduni periodici in varie città per prove di volo, workshop e dimostrazioni tecniche.
+    </p>
+    <h3>Social Media</h3>
+    <div class="social-links">
+      <a href="https://facebook.com/skyBovineOfficial" target="_blank" rel="noopener" aria-label="Facebook SkyBovine">Facebook</a> |
+      <a href="https://twitter.com/skyBovine" target="_blank" rel="noopener" aria-label="Twitter SkyBovine">Twitter</a> |
+      <a href="https://instagram.com/skyBovine" target="_blank" rel="noopener" aria-label="Instagram SkyBovine">Instagram</a> |
+      <a href="https://linkedin.com/company/skyBovine" target="_blank" rel="noopener" aria-label="Linkedin SkyBovine">LinkedIn</a>
+    </div>
+  </section>
+
+		  <!-- ACQUISTA
